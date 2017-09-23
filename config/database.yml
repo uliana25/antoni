@@ -1,0 +1,20 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: shop_dev
+  pool: 5
+  timeout: 5000
+  username: uliana
+  password:
+
+
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: shop_test
+  pool: 5
+  timeout: 5000
+  username: uliana
+  password:
+
