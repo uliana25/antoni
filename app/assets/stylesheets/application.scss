@@ -14,11 +14,11 @@
  *= require_self
  */
 #banner {
-background: #9c9;
+background: #75b7ea;
 padding: 10px;
 border-bottom: 2px solid;
-font: small-caps 40px/40px "Times New Roman", serif;
-color: #282;
+font: small-caps 40px/40px "Sans", serif;
+color: #f0f0f0;
 text-align: center;
 img {
 float: left;
@@ -34,7 +34,7 @@ background-color: #f0f0f0;
 font: bold smaller sans-serif;
 }
  #columns {
-background: #141;
+background: #f0f0f0;
 #main {
 margin-left: 17em;
 padding: 1em;
@@ -44,7 +44,7 @@ background: white;
 float: left;
 padding: 1em 2em;
 width: 13em;
-background: #141;
+background: #f0f0f0;
 form, div {
 display: inline;
 }
@@ -66,7 +66,7 @@ padding: 0;
 li {
 list-style: none;
 a {
-color: #bfb;
+color: #83a0a6;
 font-size: small;
 }
 }
@@ -79,7 +79,7 @@ font-size: small;
   background: #efe;
     legend {
     color: #dfd;
-    background: #141;
+    background: #f0f0f0;
     font-family: sans-serif;
     padding: 0.2em 1em;
     }
