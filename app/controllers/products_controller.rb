@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   include CurrentCart
+  skip_before_action :authenticate_user!
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
   # GET /products
@@ -26,7 +27,8 @@ class ProductsController < ApplicationController
   # POST /products
   # POST /products.json
   def create
-    @product = Product.new(product_params)
+    byebug
+  @product = Product.create(product_params)
     respond_to do |format|
       if @product.save
         format.html { redirect_to @product, notice: 'Product was successfully created.' }

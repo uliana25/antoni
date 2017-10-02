@@ -18,7 +18,7 @@
 
   <div class="field">
     <%= label_tag :product_type %>
-    <%= select_tag "product_type", options_from_collection_for_select(@product_types, "id", "name")%>
+    <%= collection_select :product, :type_id, ProductType.all, :id, :name%>
   </div>
 
   <div class="field">
