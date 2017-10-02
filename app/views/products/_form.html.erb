@@ -17,6 +17,11 @@
   </div>
 
   <div class="field">
+    <%= label_tag :product_type %>
+    <%= select_tag "product_type", options_from_collection_for_select(@product_types, "id", "name")%>
+  </div>
+
+  <div class="field">
     <%= form.label :description %>
     <%= form.text_area :description, id: :product_description %>
   </div>
