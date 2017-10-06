@@ -25,8 +25,9 @@ class CartsController < ApplicationController
   # POST /carts
   # POST /carts.json
   def create
+    byebug
     @cart = Cart.new(cart_params)
-
+    byebug
     respond_to do |format|
       if @cart.save
         format.html { redirect_to @cart, notice: 'Cart was successfully created.' }
