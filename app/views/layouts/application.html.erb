@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -28,11 +29,10 @@
         <li><%=link_to t('layouts.application.news') %></li>
         <li><%=link_to t('layouts.application.contact') %></a></li>
         <% if user_signed_in? %>
-        <ul>
-          <li><%= link_to 'Orders', orders_path %></li>
-          <li><%= link_to 'Products', products_path %></li>
-        </ul>
-        <%= button_to 'Выйти', destroy_user_session_path, :method => :delete %>
+          <% if user_signed_in?%>
+            <li><%= link_to 'Админка', rails_admin_path%></li>
+          <%end%>
+        <%= link_to 'Выйти', destroy_user_session_path, :method => :delete %>
         <%else%>
           <li><%= link_to 'Войти', new_user_session_path%></li>
         <% end %>

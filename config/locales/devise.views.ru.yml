@@ -11,6 +11,9 @@ ru:
         unlock_token: "Токен разблокировки"
     models:
       user: "Пользователь"
+      product: "Товар"
+      product_type: "Тип товара"
+      order: "Корзина"
   devise:
     confirmations:
       confirmed: "Ваш адрес эл. почты успешно подтвержден."
