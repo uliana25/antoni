@@ -12,12 +12,12 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
+    <%= form.label 'Имя' %>
     <%= form.text_field :name, id: :order_name, size: 40 %>
   </div>
 
   <div class="field">
-    <%= form.label :address %>
+    <%= form.label 'Адресс' %>
     <%= form.text_area :address, id: :order_address, rows: 3, cols: 40 %>
   </div>
 
@@ -27,11 +27,11 @@
   </div>
 
   <div class="field">
-    <%= form.label :pay_type %>
+    <%= form.label 'Способ оплаты' %>
     <%= form.select :pay_type, Order::PAYMENT_TYPES, prompt: 'Select a payment method'%>
   </div>
 
   <div class="actions">
-    <%= form.submit 'Place Order' %>
+    <%= form.submit 'Подтвердить заказ' %>
   </div>
 <% end %>
