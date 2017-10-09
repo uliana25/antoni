@@ -18,6 +18,13 @@ RailsAdmin.config do |config|
 
   end
 
+  config.model Order do
+    show do
+      field :products
+
+
+    end
+  end
 
   config.actions do
     dashboard                     # mandatory

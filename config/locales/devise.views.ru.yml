@@ -10,10 +10,10 @@ ru:
         reset_password_token: "Ссылка сброса пароля"
         unlock_token: "Токен разблокировки"
     models:
-      user: "Пользователь"
+      user: "Клиент"
       product: "Товар"
       product_type: "Тип товара"
-      order: "Корзина"
+      order: "Заказ"
   devise:
     confirmations:
       confirmed: "Ваш адрес эл. почты успешно подтвержден."
