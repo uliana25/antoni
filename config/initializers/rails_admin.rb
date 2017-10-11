@@ -18,6 +18,7 @@ RailsAdmin.config do |config|
   config.model 'Order' do
     show do
       field :name
+      field :phone
       field :address
       field :pay_type
       field :email
