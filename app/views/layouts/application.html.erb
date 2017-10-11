@@ -24,15 +24,13 @@
       </div>
       <ul>
         <li><%=render 'layouts/types'%></li>
-        <li><%=link_to t('layouts.application.home') %></li>
-        <li><%=link_to t('layouts.application.questions') %></a></li>
-        <li><%=link_to t('layouts.application.news') %></li>
-        <li><%=link_to t('layouts.application.contact') %></a></li>
+        <li><%=link_to t('layouts.application.home'). root_path %></li>
+        <li><%=link_to t('layouts.application.questions'), ship_path %></a></li>
+        <li><%=link_to t('layouts.application.contact'), all_path %></a></li>
+
         <% if user_signed_in? %>
-          <% if user_signed_in?%>
             <li><%= link_to 'Админка', rails_admin_path%></li>
-          <%end%>
-        <%= link_to 'Выйти', destroy_user_session_path, :method => :delete %>
+            <%= link_to 'Выйти', destroy_user_session_path, :method => :delete %>
         <%else%>
           <li><%= link_to 'Войти', new_user_session_path%></li>
         <% end %>
