@@ -1,17 +1,10 @@
-# Load the Rails application.
-require_relative 'application'
-
 # Initialize the Rails application.
-Rails.application.initialize!
-Antoni::Application.configure do
-config.action_mailer.delivery_method = :smtp
-config.action_mailer.smtp_settings = {
-  address: "smtp.gmail.com",
-  port: 587,
-  domain: "domain.of.sender.net",
-  authentication:   "plain",
-  user_name:   "dave",
-  password:   "secret",
-  enable_starttls_auto: true
+ActionMailer::Base.smtp_settings = {
+  :user_name => ENV['Uliana25'],
+  :password => ENV['uliana25'],
+  :domain => 'https://mighty-savannah-53637.herokuapp.com/',
+  :address => 'smtp.sendgrid.net',
+  :port => 587,
+  :authentication => :plain,
+  :enable_starttls_auto => true
 }
-end
