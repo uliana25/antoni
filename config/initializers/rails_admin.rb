@@ -25,7 +25,7 @@ RailsAdmin.config do |config|
         pretty_value do
           order = bindings[:object]
           order.line_items.map do |item|
-            bindings[:view].content_tag(:div, "Название: #{item.product.title}; Количество: #{item.quantity}").html_safe
+            bindings[:view].content_tag(:div, "Название: #{item.product.title}; Количество: #{item.quantity}")
           end
         end
       end
