@@ -10,7 +10,8 @@ Rails.application.routes.draw do
     get :who_bought, on: :member
   end
 
-
+  get 'all', to: 'contact#all'
+  get 'ship', to: 'delivery#ship'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
